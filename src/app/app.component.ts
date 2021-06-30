@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './service/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Olá Mundo!';
+
+  constructor(
+    public auth: AuthService //injeção de dependecia para conseguir acessar o auth no app component html
+  ){}
 }
