@@ -19,7 +19,20 @@ export class TemaService {
     return this.http.get<Tema[]>('https://blogdanati.herokuapp.com/tema', this.token)
   }
 
+  getByIdTema(id: number): Observable<Tema>{
+    return this.http.get<Tema>(`https://blogdanati.herokuapp.com/tema/${id}`, this.token)
+  }
+
   postTema(tema: Tema): Observable<Tema>{
     return this.http.post<Tema>('https://blogdanati.herokuapp.com/tema', tema, this.token)
+  }
+
+  putTema(tema: Tema): Observable<Tema>{
+    return this.http.put<Tema>('https://blogdanati.herokuapp.com/tema', tema, this.token)
+  }
+  //template literals -> uso da crase no lugar das aspas
+  //Serve para passar variaveis de endereço ${`variavel`}
+  deleteTema(id: number){
+    return this.http.delete(`https://blogdanati.herokuapp.com/tema/${id}`, this.token)
   }
 }
