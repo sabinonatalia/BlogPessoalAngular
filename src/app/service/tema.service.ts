@@ -9,6 +9,7 @@ import { Tema } from '../model/Tema';
 })
 export class TemaService {
 
+
   constructor(private http: HttpClient) { }
 
   token = {
@@ -17,14 +18,24 @@ export class TemaService {
 
   getAllTema(): Observable<Tema[]>{
     return this.http.get<Tema[]>('https://blognatalia.herokuapp.com/tema', this.token)
+
+
   }
 
   getByIdTema(id: number): Observable<Tema>{
     return this.http.get<Tema>(`https://blognatalia.herokuapp.com/tema/${id}`, this.token)
+
   }
 
   postTema(tema: Tema): Observable<Tema>{
     return this.http.post<Tema>('https://blognatalia.herokuapp.com/tema', tema, this.token)
+
+  } 
+  getByIdTema(id: number): Observable<Tema>{
+    return this.http.get<Tema>(`https://blognatalia.herokuapp.com/tema/${id}`,this.token)
+
+}
+
   }
 
   putTema(tema: Tema): Observable<Tema>{
@@ -35,4 +46,5 @@ export class TemaService {
   deleteTema(id: number){
     return this.http.delete(`https://blognatalia.herokuapp.com/tema/${id}`, this.token)
   }
+
 }
