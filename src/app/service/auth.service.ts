@@ -22,6 +22,10 @@ export class AuthService {
     return this.http.post<User>('https://blognatalia.herokuapp.com/usuarios/cadastrar', user)
   }
 
+  getByIdUser(id: number): Observable<User>{
+    return this.http.get<User>(`https://blognatalia.herokuapp.com/usuarios/${id}`)
+  }
+
   logado(){ //verificar se o token está preenchido
     let ok: boolean = false
 
