@@ -9,42 +9,39 @@ import { Tema } from '../model/Tema';
 })
 export class TemaService {
 
-
-  constructor(private http: HttpClient) { }
+constructor(
+  private http: HttpClient) { }
 
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
-  getAllTema(): Observable<Tema[]>{
+  getAllTema(): Observable<Tema[]> {
     return this.http.get<Tema[]>('https://blognatalia.herokuapp.com/tema', this.token)
 
 
   }
 
-  getByIdTema(id: number): Observable<Tema>{
+  getByIdTema(id: number): Observable<Tema> {
     return this.http.get<Tema>(`https://blognatalia.herokuapp.com/tema/${id}`, this.token)
 
   }
 
-  postTema(tema: Tema): Observable<Tema>{
+  postTema(tema: Tema): Observable<Tema> {
     return this.http.post<Tema>('https://blognatalia.herokuapp.com/tema', tema, this.token)
 
-  } 
-  getByIdTema(id: number): Observable<Tema>{
-    return this.http.get<Tema>(`https://blognatalia.herokuapp.com/tema/${id}`,this.token)
+  }
 
+putTema(tema: Tema): Observable<Tema>{
+  return this.http.put<Tema>('https://blognatalia.herokuapp.com/tema', tema, this.token)
 }
 
-  }
 
-  putTema(tema: Tema): Observable<Tema>{
-    return this.http.put<Tema>('https://blognatalia.herokuapp.com/tema', tema, this.token)
-  }
-  //template literals -> uso da crase no lugar das aspas
-  //Serve para passar variaveis de endereço ${`variavel`}
-  deleteTema(id: number){
-    return this.http.delete(`https://blognatalia.herokuapp.com/tema/${id}`, this.token)
-  }
+//template literals -> uso da crase no lugar das aspas
+//Serve para passar variaveis de endereço ${`variavel`}
+
+deleteTema(id: number) {
+  return this.http.delete(`https://blognatalia.herokuapp.com/tema/${id}`, this.token)
+}
 
 }
