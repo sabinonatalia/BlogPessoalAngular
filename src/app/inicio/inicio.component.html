@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <!-- 
     <div class="row bg-secondary d-flex align-items-center"> -->
-    <div class="row bg-secondary d-flex align-items-center">
+    <div class="row bg-info d-flex align-items-center">
 
         <div class="col-md-6">
             <div class="row d-flex justify-content-center">
@@ -25,55 +25,16 @@
     </div>
 </div>
 
-<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img style="height: 600px; width: 533px;" class="d-block w-100" src="https://media.discordapp.net/attachments/814843784529313795/860991245575913472/cake80.jpg"
-                    alt="Foto doce">
-            </div>
-            <div class="carousel-item">
-                <img style="height: 600px; width: 533px;" class="d-block w-100" src="https://media.discordapp.net/attachments/814843784529313795/860991249807704084/cake81.jpg"
-                    alt="Foto doce">
-            </div>
-            <div class="carousel-item">
-                <img style="height: 600px; width: 533px;" class="d-block w-100" src="https://media.discordapp.net/attachments/814843784529313795/860991258025263114/cake800.jpg"
-                    alt="Foto doce">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
-    </div> -->
-
-<!-- <div class="jumbotron jumbotron-fluid bgjumbo">
-    <div class="container">
-        <h1 class="display-4 font-weight-bold text-white">Bem-vinde ao DoceTerapia!</h1>
-        <p class="lead text-white">Se livre do estresse da vida com uma dose diária de DoceTerapia🧁</p>
-    </div>
-    <div class="row d-flex justify-content-center mt-3 mb-5">
-        <div class="col-md-6">
-            <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova
-                Postagem</button>
-            <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
-        </div>
-    </div>
-</div> -->
-
 <div class="container mb-5 mt-5" id="postagens">
     <nav>
-        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+        <div class="nav nav-tabs d-flex justify-content-center" 
+        id="nav-tab" 
+        role="tablist">
             <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab"
-                data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens"
+                data-toggle="tab" 
+                href="#todasPostagens" 
+                role="tab" 
+                aria-controls="nav-todasPostagens"
                 aria-selected="true">Todas as postagens</a>
 
             <a (click)='findByIdUser()' class="nav-item nav-link text-secondary font-weight-bold"
@@ -121,7 +82,7 @@
                         <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
                         <a [routerLink]="['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
 
@@ -172,9 +133,6 @@
 
                     <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
                         <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
-                    </select>
-                    <select name="tema" id="tema" class="form-control">
-                        <option value="">Temas</option>
                     </select>
                 </div>
 
