@@ -32,6 +32,10 @@ constructor(
 
   }
 
+  getByNomeTema(nome: string): Observable<Tema[]>{
+    return this.http.get<Tema[]>(`https://blognatalia.herokuapp.com/tema/nome${nome}`, this.token)
+  }
+
   postTema(tema: Tema): Observable<Tema> {
     return this.http.post<Tema>('https://blognatalia.herokuapp.com/tema', tema, this.token)
 
