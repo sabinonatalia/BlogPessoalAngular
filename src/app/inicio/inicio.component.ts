@@ -26,6 +26,9 @@ export class InicioComponent implements OnInit {
   user: User = new User()
   idUser = environment.id
 
+  key = 'data'
+  reverse = true
+
   constructor(
     private router: Router,
     private postagemService: PostagemService,
@@ -51,7 +54,7 @@ export class InicioComponent implements OnInit {
     this.temaService.getAllTema().subscribe((resp: Tema[]) => {
       this.listaTemas = resp
     })
-  }
+  } 
 
   findByIdTema() {
     this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) => {
