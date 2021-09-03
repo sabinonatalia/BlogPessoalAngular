@@ -37,7 +37,7 @@ export class CadastrarComponent implements OnInit {
     this.user.tipo = this.tipoUsuario
 
     if(this.user.senha != this.confirmarSenha){
-      alert('As senhas não correspondem')
+     this.alertas.showAlertDanger('As senhas não correspondem')
     }else {
       this.authService.cadastrar(this.user).subscribe((resp: User) =>
       {this.user = resp
