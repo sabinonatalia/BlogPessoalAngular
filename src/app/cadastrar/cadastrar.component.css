@@ -1,9 +1,43 @@
+
 #img-bg{
-    background-image: url('https://blush.design/api/download?shareUri=Qt6xRnRN5YxYK1MC&c=Bottom_0%7E393f82-0.1%7E393f82-0.2%7E2b44ff-0.3%7E393f82_Hair_0%7E2c1b18-0.1%7E181658-0.2%7E2c1b18-0.3%7Ee8e1e1_Skin_0%7E915b3c-0.1%7Eeac7a8-0.2%7Ed4a181-0.3%7E915b3c_Top_0%7Effa434-0.1%7Effa434-0.2%7Effa434-0.3%7Eff4133&w=800&h=800&fm=png');
+    background-image: url('https://cdn.discordapp.com/attachments/814843784529313795/884595067677990922/Mobile_login-pana_1.png');
 
     min-height: 695px;
     
     background-position:center;  
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.back{
+    background-color:#F2C438 ;
+    border-radius: 10px;
+}
+
+h1, label{
+    color: #ffff;
+}
+
+input, option{
+    background-color: #ffffff;
+}
+
+.botao-cor{
+    background-color:#8b5b00;
+    color: #ffffff;
+}
+
+.botao-cor:hover{
+    background-color: #887249;
+    color: #ffffff;
+    
+}
+
+.botao-cor-red{
+    background-color: rgb(160, 21, 21);
+    color: #ffffff;
+}
+
+.botao-cor-red:hover{
+    background-color:rgb(161, 75, 75) ;
 }

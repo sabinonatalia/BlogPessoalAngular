@@ -1,8 +1,28 @@
 #img-bg{
-    background-image: url('https://public-files.gumroad.com/rtkz75kvl048700tpa3orc98b75l');
-
+    background-image: url('https://cdn.discordapp.com/attachments/814843784529313795/884595037801938984/Blog_post-cuate.png'); 
     min-height: 695px;
     background-position:center;  
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.back{
+    background-color: #D9A404;
+    border-radius: 10px;
+    
+}
+
+.botao-cor{
+    background-color:#8b5b00;
+
+}
+
+.botao-cor:hover{
+    background-color: #856223;
+    color: #ffffff;
+    
+}
+
+h1, label, button, p{
+    color: #ffffff;
 }

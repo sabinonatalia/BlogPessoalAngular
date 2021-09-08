@@ -27,15 +27,15 @@ export class AuthService {
     return this.http.get<User>(`https://blognatalia.herokuapp.com/usuarios/${id}`)
   }
 
-  adm(){
-    let ok: boolean = false
+  // adm(){
+  //   let ok: boolean = false
 
-    if(environment.tipo == 'adm'){
-      ok = true
-    }
+  //   if(environment.tipo == 'adm'){
+  //     ok = true
+  //   }
 
-    return ok
-  }
+  //   return ok
+  // }
 
   logado(){ //verificar se o token está preenchido
     let ok: boolean = false
