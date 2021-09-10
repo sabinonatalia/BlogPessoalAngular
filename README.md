@@ -1,13 +1,9 @@
 # BlogPessoalAngular
 
 <h2>Status</h2>
-<a href="https://redeantonias.netlify.app/" target="_blank">✅Pronto, mas sempre recebendo novas atualizações e implentações✅</a> 
-
-<p align="center">
-<a target="_blank" href="https://redeantonias.netlify.app/>
-  <img src="https://i.imgur.com/JWtPQ50.png" alt="Rede Antonias"/>
-  </a>
-</p>
+<a href="https://blog-pessoal-natalia.netlify.app/#/entrar" target="_blank">✅Pronto, mas sempre recebendo novas atualizações e implentações</a>
+<br><br>
+📝Para acessar a documentação da documentação <a href="" target= "_blank">clique aqui </a>.
 
 <h2>Blog Pessoal</h2>
   Este é um projeto desenvolvido durante o bootcamp da Generation Brasil, <a href="https://github.com/sabinonatalia/backend-blog">clique aqui</a> para acessar o repositório back-end
