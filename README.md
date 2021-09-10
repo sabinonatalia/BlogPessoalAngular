@@ -9,7 +9,7 @@ Para acessar a documentação <a href= "https://sabinonatalia.github.io/doc-blog
 <img  src="https://media.discordapp.net/attachments/814843784529313795/885906337068888124/BlogPessoal_e_mais_17_paginas_-_Pessoal_Microsoft_Edge_09_09_2021_23_57_27_2.png?width=1200&height=579" alt="página de login do blog" width="1000" height="650">
 
 <h2>Status:</h2>
-<a href="blog-pessoal-natalia.netlify.app" target="_blank">✅Pronto, mas sempre recebendo novas atualizações e
+<a href="https://blog-pessoal-natalia.netlify.app/#/entrar" target="_blank">✅Pronto, mas sempre recebendo novas atualizações e
   implentações✅</a>
 
 <h2>Funcionalidades da aplicação:</h2>
