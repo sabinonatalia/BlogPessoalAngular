@@ -2,7 +2,7 @@
 
 Este é um projeto desenvolvido durante o bootcamp da Generation Brasil, <a
   href="https://github.com/sabinonatalia/backend-blog">clique aqui</a> para acessar o repositório
-front-end.
+back-end.
 <br>
 Para acessar a documentação <a href= "https://sabinonatalia.github.io/doc-blogAngular.v2/"> clique aqui. </a>
 
