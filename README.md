@@ -10,7 +10,7 @@ Para acessar a documentação <a href= "https://sabinonatalia.github.io/doc-blog
 
 <h2>Status:</h2>
 <a href="https://blog-pessoal-natalia.netlify.app/#/entrar" target="_blank">✅Pronto, mas sempre recebendo novas atualizações e
-  implentações✅</a>
+  implementações✅</a>
 
 <h2>Funcionalidades da aplicação:</h2>
 
